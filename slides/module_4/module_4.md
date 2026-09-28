@@ -1410,7 +1410,7 @@ If you've been drilling these, I think it is reasonable, but you have to practic
 1. $T(n) = 2 \cdot T(n / 2) + n$
 2. $T(n) = T(n / 3) + n^2 \lg n$
 3. $T(n) = n + 4\cdot T(n / 2)$
-4. $T(n) = 256\cdot T(n / 2) + n^3 \cdot |\sin n|$
+4. $T(n) = 256\cdot T(n / 4) + n^3 \cdot |\sin n|$
 5. $T(n) = 49 \cdot T (n / 7) + n^2 \log n$
 6. $T(n) = 100 \cdot T(n / 10) + 1$
 7. $T(n) = T(n - 1) + \Theta(n)$
