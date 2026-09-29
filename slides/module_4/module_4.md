@@ -1410,7 +1410,7 @@ If you've been drilling these, I think it is reasonable, but you have to practic
 1. $T(n) = 2 \cdot T(n / 2) + n$
 2. $T(n) = T(n / 3) + n^2 \lg n$
 3. $T(n) = n + 4\cdot T(n / 2)$
-4. $T(n) = 256\cdot T(n / 4) + n^3 \cdot |\sin n|$
+4. $T(n) = 256\cdot T(n / 2) + n^3 \cdot |\sin n|$
 5. $T(n) = 49 \cdot T (n / 7) + n^2 \log n$
 6. $T(n) = 100 \cdot T(n / 10) + 1$
 7. $T(n) = T(n - 1) + \Theta(n)$
@@ -1423,7 +1423,7 @@ If you've been drilling these, I think it is reasonable, but you have to practic
 2. $c_\mathrm{crit}= 0$, $f(n) = n^2 \lg n = \Omega(n^2)$, $c_\mathrm{crit} \lt 2$ case 3. $\exists k \lt 1, n^2 / 2 \le k n^2$? 
    Yes, case 3: $T(n) = \Theta(n^2 \lg n)$
 3. I flipped the terms around but it doesn't matter: $c_\mathrm{crit}= \lg 4 / \lg 2 = 2$, $f(n) = O(n^1)$, $2 \gt 1$, so case 1. $T(n) = \Theta(n^{c_\mathrm{crit}})=\Theta(n^2)$
-4. $c_\mathrm{crit}= 7$, $f(n) = O(n^3)$, therefore case 1: $T(n) = \Theta(n^7)$
+4. $c_\mathrm{crit}= 8$, $f(n) = O(n^3)$, therefore case 1: $T(n) = \Theta(n^8)$
 5. $c_\mathrm{crit}= \log_7 49 / \log_7 7 = 2$, $c = 2$, case 2. $T(n) = \Theta(n^2 (\log n)^2)$
 6. $c_\mathrm{crit}= \log_{10} 100 / \log_{10} 10 = 2$, $1 = O(n^0)$, $1 \gt 0$, $c_\mathrm{crit} > c$ case 1: $T(n) = \Theta(n^2)$
 7. Not a divide and conquer problem; can't use the master theorem.
