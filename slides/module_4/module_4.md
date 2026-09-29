@@ -1420,8 +1420,8 @@ If you've been drilling these, I think it is reasonable, but you have to practic
 # Appendix A: the answers
 
 1. $c_\mathrm{crit}= 1$, $f(n) = n^1 \cdot (\log n)^0$, so case 2. $T(n) = \Theta(n \lg n)$
-2. $c_\mathrm{crit}= 0$, $f(n) = n^2 \lg n = \Omega(n^2)$, $c_\mathrm{crit} \lt 2$ case 3. $\exists k \lt 1, n^2 / 2 \le k n^2$? 
-   Yes, case 3: $T(n) = \Theta(n^2 \lg n)$
+2. $c_\mathrm{crit}= 0$, $f(n) = n^2 \lg n = \Omega(n^2)$, $c_\mathrm{crit} \lt 2$ case 3. $\exists k \lt 1, n^2 / 9 \le k n^2$? 
+   Yes, as long as k between 1/9 and 1. case 3: $T(n) = \Theta(n^2 \lg n)$
 3. I flipped the terms around but it doesn't matter: $c_\mathrm{crit}= \lg 4 / \lg 2 = 2$, $f(n) = O(n^1)$, $2 \gt 1$, so case 1. $T(n) = \Theta(n^{c_\mathrm{crit}})=\Theta(n^2)$
 4. $c_\mathrm{crit}= 8$, $f(n) = O(n^3)$, therefore case 1: $T(n) = \Theta(n^8)$
 5. $c_\mathrm{crit}= \log_7 49 / \log_7 7 = 2$, $c = 2$, case 2. $T(n) = \Theta(n^2 (\log n)^2)$
