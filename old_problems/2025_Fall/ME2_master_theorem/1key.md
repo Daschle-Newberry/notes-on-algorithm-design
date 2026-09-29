@@ -27,4 +27,4 @@
 - Case 3
 - Regularity criterion holds for any valid $k \lt 1$:
   $3^{(n / 2)} \le k3^n$
-
+- $\Theta(3^n)$
