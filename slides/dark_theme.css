@@ -1,5 +1,7 @@
 /* @theme dark_theme */
 
+@import 'default';
+
 :root {
     --fg: #f0efef;
     --fg-muted: #c7c7c7;
